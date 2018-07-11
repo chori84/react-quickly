@@ -1,0 +1,26 @@
+{
+  "name": "ch03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-hello": "./node_modules/.bin/babel jsx/HelloWorld.jsx -o js/HelloWorld.js -w",
+    "build-content": "./node_modules/.bin/babel jsx/Content.jsx -o js/Content.js -w",
+    "build": "npm run build-hello & npm run build-content"
+  },
+  "keywords": [
+    "react.js"
+  ],
+  "author": "Azat Mardan",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-preset-react": "6.24.1"
+  }
+}
