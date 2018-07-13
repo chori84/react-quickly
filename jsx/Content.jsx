@@ -1,6 +1,18 @@
 class Content extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      githubName: 'chori84',
+      books: [
+        'pro express.js',
+        'practical node.js',
+        'rapid prototyping with js'
+      ]
+    }
+  }
+  
   getUrl() {
-    return 'http://webapplog.com'
+    return 'http://webapplog.com';
   }
   
   render() {
@@ -15,4 +27,4 @@ class Content extends React.Component {
 ReactDOM.render(
   <Content />,
   document.getElementById('urlContent')
-)
+);

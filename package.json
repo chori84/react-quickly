@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-hello": "./node_modules/.bin/babel jsx/HelloWorld.jsx -o js/HelloWorld.js -w",
     "build-content": "./node_modules/.bin/babel jsx/Content.jsx -o js/Content.js -w",
-    "build": "npm run build-hello & npm run build-content"
+    "build-clock": "./node_modules/.bin/babel jsx/Clock.jsx -o js/Clock.js -w",
+    "build": "npm run build-hello & npm run build-content & npm run build-clock"
   },
   "keywords": [
     "react.js"
