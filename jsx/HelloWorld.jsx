@@ -1,8 +1,14 @@
+const HelloWorld = (props) => {
+  return <h1 {...props}>Hello {props.frameworkName} world!!</h1>;
+}
+
+/*
 class HelloWorld extends React.Component {
   render() {
     return <h1 {...this.props}>Hello {this.props.frameworkName} world!!</h1>;
   }
 }
+*/
 
 ReactDOM.render(
   <div>

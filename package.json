@@ -8,7 +8,9 @@
     "build-hello": "./node_modules/.bin/babel jsx/HelloWorld.jsx -o js/HelloWorld.js -w",
     "build-content": "./node_modules/.bin/babel jsx/Content.jsx -o js/Content.js -w",
     "build-clock": "./node_modules/.bin/babel jsx/Clock.jsx -o js/Clock.js -w",
-    "build": "npm run build-hello & npm run build-content & npm run build-clock"
+    "build-analogDisplay": "./node_modules/.bin/babel jsx/AnalogDisplay.jsx -o js/AnalogDisplay.js -w",
+    "build-digitalDisplay": "./node_modules/.bin/babel jsx/DigitalDisplay.jsx -o js/DigitalDisplay.js -w",
+    "build": "npm run build-hello & npm run build-content & npm run build-clock & npm run build-analogDisplay & npm run build-digitalDisplay"
   },
   "keywords": [
     "react.js"

@@ -1,14 +1,20 @@
+const HelloWorld = props => {
+  return React.createElement(
+    'h1',
+    props,
+    'Hello ',
+    props.frameworkName,
+    ' world!!'
+  );
+};
+
+/*
 class HelloWorld extends React.Component {
   render() {
-    return React.createElement(
-      'h1',
-      this.props,
-      'Hello ',
-      this.props.frameworkName,
-      ' world!!'
-    );
+    return <h1 {...this.props}>Hello {this.props.frameworkName} world!!</h1>;
   }
 }
+*/
 
 ReactDOM.render(React.createElement(
   'div',
