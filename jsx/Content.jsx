@@ -10,6 +10,14 @@ class Content extends React.Component {
       ]
     }
   }
+
+  componentWillMount() {
+    console.log('componentWillMount Content Node = ' + ReactDOM.findDOMNode(this));
+  }
+  
+  componentDidMount() {
+    console.dir('componentDidMount Content Node = ' + ReactDOM.findDOMNode(this));
+  }
   
   getUrl() {
     return 'http://webapplog.com';

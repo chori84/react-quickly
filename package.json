@@ -10,7 +10,13 @@
     "build-clock": "./node_modules/.bin/babel jsx/Clock.jsx -o js/Clock.js -w",
     "build-analogDisplay": "./node_modules/.bin/babel jsx/AnalogDisplay.jsx -o js/AnalogDisplay.js -w",
     "build-digitalDisplay": "./node_modules/.bin/babel jsx/DigitalDisplay.jsx -o js/DigitalDisplay.js -w",
-    "build": "npm run build-hello & npm run build-content & npm run build-clock & npm run build-analogDisplay & npm run build-digitalDisplay"
+    "build-lifecycle": "./node_modules/.bin/babel jsx/LifeCycleContent.jsx -o js/LifeCycleContent.js -w",
+    "build-logger": "./node_modules/.bin/babel jsx/Logger.jsx -o js/Logger.js -w",
+    "build-lifecycleLogger": "npm run build-lifecycle & npm run build-logger",
+    "build-noteScript": "./node_modules/.bin/babel jsx/noteScript.jsx -o js/noteScript.js -w",
+    "build-note": "./node_modules/.bin/babel jsx/Note.jsx -o js/Note.js -w",
+    "build-noteScriptNote": "npm run build-noteScript & npm run build-note",
+    "build": "npm run build-hello & npm run build-content & npm run build-clock & npm run build-analogDisplay & npm run build-digitalDisplay & npm run build-lifecycleLogger & npm run build-noteScriptNote"
   },
   "keywords": [
     "react.js"
