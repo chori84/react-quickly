@@ -30,7 +30,8 @@
     "build-sliderValue": "./node_modules/.bin/babel jsx/SliderValue.jsx -o js/SliderValue.js -w",
     "build-sliderContent": "./node_modules/.bin/babel jsx/SliderContent.jsx -o js/SliderContent.js -w",
     "build-sliderBundle": "npm run build-slider & npm run build-sliderValue & npm run build-sliderContent",
-    "build": "npm run build-hello & npm run build-content & build-clockBundle & npm run build-lifecycleLogger & npm run build-noteScriptNote & npm run build-saveButton & npm run build-mouse & npm run build-clickCounterBundle & npm run build-radioBundle & npm run build-sliderBundle"
+    "build-input": "./node_modules/.bin/babel jsx/InputTest.jsx -o js/InputTest.js -w",
+    "build": "npm run build-hello & npm run build-content & build-clockBundle & npm run build-lifecycleLogger & npm run build-noteScriptNote & npm run build-saveButton & npm run build-mouse & npm run build-clickCounterBundle & npm run build-radioBundle & npm run build-sliderBundle & npm run build-input"
   },
   "keywords": [
     "react.js"
