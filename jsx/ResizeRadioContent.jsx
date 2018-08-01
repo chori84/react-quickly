@@ -13,5 +13,5 @@ class ResizeRadioContent extends React.Component {
 
 ReactDOM.render(
   <ResizeRadioContent />,
-  document.getElementById('radioContent')
+  document.getElementById('resizeRadioContent')
 );

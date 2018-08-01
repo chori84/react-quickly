@@ -31,7 +31,16 @@
     "build-sliderContent": "./node_modules/.bin/babel jsx/SliderContent.jsx -o js/SliderContent.js -w",
     "build-sliderBundle": "npm run build-slider & npm run build-sliderValue & npm run build-sliderContent",
     "build-input": "./node_modules/.bin/babel jsx/InputTest.jsx -o js/InputTest.js -w",
-    "build": "npm run build-hello & npm run build-content & npm run build-clockBundle & npm run build-lifecycleLogger & npm run build-noteScriptNote & npm run build-saveButton & npm run build-mouse & npm run build-clickCounterBundle & npm run build-radioBundle & npm run build-sliderBundle & npm run build-input"
+    "build-radio": "./node_modules/.bin/babel jsx/Radio.jsx -o js/Radio.js -w",
+    "build-checkbox": "./node_modules/.bin/babel jsx/Checkbox.jsx -o js/Checkbox.js -w",
+    "build-select": "./node_modules/.bin/babel jsx/Select.jsx -o js/Select.js -w",
+    "build-formContent": "./node_modules/.bin/babel jsx/FormContent.jsx -o js/FormContent.js -w",
+    "build-checkedBundle": "npm run build-radio & npm run build-checkbox & npm run build-select & npm run build-formContent",
+    "build-account": "./node_modules/.bin/babel jsx/Account.jsx -o js/Account.js -w",
+    "build-uncontrolled": "./node_modules/.bin/babel jsx/UncontrolledComponent.jsx -o js/UncontrolledComponent.js -w",
+    "build-refs": "./node_modules/.bin/babel jsx/Refs.jsx -o js/Refs.js -w",
+    "build-uncontrolledBundle": "npm run build-uncontrolled & npm run build-refs",
+    "build": "npm run build-hello & npm run build-content & npm run build-clockBundle & npm run build-lifecycleLogger & npm run build-noteScriptNote & npm run build-saveButton & npm run build-mouse & npm run build-clickCounterBundle & npm run build-resizeRadioBundle & npm run build-sliderBundle & npm run build-input & npm run build-checkedBundle & npm run build-account & npm run build-uncontrolledBundle"
   },
   "keywords": [
     "react.js"
