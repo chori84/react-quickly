@@ -1,7 +1,7 @@
-class RadioContent extends React.Component {
+class ResizeRadioContent extends React.Component {
   render() {
     return <div>
-      <Radio
+      <ResizeRadio
         order={1}
         name={'resize-radio'}
         id={'react-radio'}
@@ -12,6 +12,6 @@ class RadioContent extends React.Component {
 }
 
 ReactDOM.render(
-  <RadioContent />,
+  <ResizeRadioContent />,
   document.getElementById('radioContent')
 );

@@ -10,6 +10,7 @@
     "build-clock": "./node_modules/.bin/babel jsx/Clock.jsx -o js/Clock.js -w",
     "build-analogDisplay": "./node_modules/.bin/babel jsx/AnalogDisplay.jsx -o js/AnalogDisplay.js -w",
     "build-digitalDisplay": "./node_modules/.bin/babel jsx/DigitalDisplay.jsx -o js/DigitalDisplay.js -w",
+    "build-clockBundle": "npm run build-clock & npm run build-analogDisplay & npm run build-digitalDisplay",
     "build-lifecycle": "./node_modules/.bin/babel jsx/LifeCycleContent.jsx -o js/LifeCycleContent.js -w",
     "build-logger": "./node_modules/.bin/babel jsx/Logger.jsx -o js/Logger.js -w",
     "build-lifecycleLogger": "npm run build-lifecycle & npm run build-logger",
@@ -22,14 +23,14 @@
     "build-counter": "./node_modules/.bin/babel jsx/Counter.jsx -o js/Counter.js -w",
     "build-clickCounterButton": "./node_modules/.bin/babel jsx/ClickCounterButton.jsx -o js/ClickCounterButton.js -w",
     "build-clickCounterBundle": "npm run build-counter & npm run build-clickCounter & npm run build-clickCounterButton",
-    "build-radio": "./node_modules/.bin/babel jsx/Radio.jsx -o js/Radio.js -w",
-    "build-radioContent": "./node_modules/.bin/babel jsx/RadioContent.jsx -o js/RadioContent.js -w",
-    "build-radioBundle": "npm run build-radio & npm run build-radioContent",
+    "build-resizeRadio": "./node_modules/.bin/babel jsx/ResizeRadio.jsx -o js/ResizeRadio.js -w",
+    "build-resizeRadioContent": "./node_modules/.bin/babel jsx/ResizeRadioContent.jsx -o js/ResizeRadioContent.js -w",
+    "build-resizeRadioBundle": "npm run build-resizeRadio & npm run build-resizeRadioContent",
     "build-slider": "./node_modules/.bin/babel jsx/SliderButtons.jsx -o js/SliderButtons.js -w",
     "build-sliderValue": "./node_modules/.bin/babel jsx/SliderValue.jsx -o js/SliderValue.js -w",
     "build-sliderContent": "./node_modules/.bin/babel jsx/SliderContent.jsx -o js/SliderContent.js -w",
     "build-sliderBundle": "npm run build-slider & npm run build-sliderValue & npm run build-sliderContent",
-    "build": "npm run build-hello & npm run build-content & npm run build-clock & npm run build-analogDisplay & npm run build-digitalDisplay & npm run build-lifecycleLogger & npm run build-noteScriptNote & npm run build-saveButton & npm run build-mouse & npm run build-clickCounterBundle & npm run build-radioBundle & npm run build-sliderBundle"
+    "build": "npm run build-hello & npm run build-content & build-clockBundle & npm run build-lifecycleLogger & npm run build-noteScriptNote & npm run build-saveButton & npm run build-mouse & npm run build-clickCounterBundle & npm run build-radioBundle & npm run build-sliderBundle"
   },
   "keywords": [
     "react.js"
