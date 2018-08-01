@@ -16,7 +16,20 @@
     "build-noteScript": "./node_modules/.bin/babel jsx/noteScript.jsx -o js/noteScript.js -w",
     "build-note": "./node_modules/.bin/babel jsx/Note.jsx -o js/Note.js -w",
     "build-noteScriptNote": "npm run build-noteScript & npm run build-note",
-    "build": "npm run build-hello & npm run build-content & npm run build-clock & npm run build-analogDisplay & npm run build-digitalDisplay & npm run build-lifecycleLogger & npm run build-noteScriptNote"
+    "build-saveButton": "./node_modules/.bin/babel jsx/SaveButton.jsx -o js/SaveButton.js -w",
+    "build-mouse": "./node_modules/.bin/babel jsx/Mouse.jsx -o js/Mouse.js -w",
+    "build-clickCounter": "./node_modules/.bin/babel jsx/ClickCounter.jsx -o js/ClickCounter.js -w",
+    "build-counter": "./node_modules/.bin/babel jsx/Counter.jsx -o js/Counter.js -w",
+    "build-clickCounterButton": "./node_modules/.bin/babel jsx/ClickCounterButton.jsx -o js/ClickCounterButton.js -w",
+    "build-clickCounterBundle": "npm run build-counter & npm run build-clickCounter & npm run build-clickCounterButton",
+    "build-radio": "./node_modules/.bin/babel jsx/Radio.jsx -o js/Radio.js -w",
+    "build-radioContent": "./node_modules/.bin/babel jsx/RadioContent.jsx -o js/RadioContent.js -w",
+    "build-radioBundle": "npm run build-radio & npm run build-radioContent",
+    "build-slider": "./node_modules/.bin/babel jsx/SliderButtons.jsx -o js/SliderButtons.js -w",
+    "build-sliderValue": "./node_modules/.bin/babel jsx/SliderValue.jsx -o js/SliderValue.js -w",
+    "build-sliderContent": "./node_modules/.bin/babel jsx/SliderContent.jsx -o js/SliderContent.js -w",
+    "build-sliderBundle": "npm run build-slider & npm run build-sliderValue & npm run build-sliderContent",
+    "build": "npm run build-hello & npm run build-content & npm run build-clock & npm run build-analogDisplay & npm run build-digitalDisplay & npm run build-lifecycleLogger & npm run build-noteScriptNote & npm run build-saveButton & npm run build-mouse & npm run build-clickCounterBundle & npm run build-radioBundle & npm run build-sliderBundle"
   },
   "keywords": [
     "react.js"

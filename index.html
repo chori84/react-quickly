@@ -3,6 +3,14 @@
   <head>
     <script src="js/react.js"></script>
     <script src="js/react-dom.js"></script>
+    
+    <link rel="stylesheet" href="css/radio.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-ui.js"></script>
   </head>
   <body>
     <div id="clockContent"></div>
@@ -10,6 +18,29 @@
     <div id="urlContent"></div>
     <div id="lifeCycleContent"></div>
     <div id="noteContent"></div>
+    <div id="buttonContent"></div>
+    <div id="mouseContent"></div>
+    <div id="counterContent"></div>
+    <div id="radioContent"></div>
+    <br />
+    <div id="slider"></div>
+    <div id="sliderContent"></div>
+    
+    <script>
+      $(function() {
+        let handleChange = (e, ui)=>{
+          var slideEvent = new CustomEvent('slide', {
+            detail: {ui: ui, jQueryEvent: e}
+          })
+          window.dispatchEvent(slideEvent)
+        }
+        $('#slider').slider({
+          'change': handleChange,
+          'slide': handleChange
+        })
+      })
+    </script>
+    
     <script src="js/HelloWorld.js"></script>
     <script src="js/Content.js"></script>
     <script src="js/AnalogDisplay.js"></script>
@@ -19,5 +50,15 @@
     <script src="js/LifeCycleContent.js"></script>
     <script src="js/noteScript.js"></script>
     <script src="js/Note.js"></script>
+    <script src="js/SaveButton.js"></script>
+    <script src="js/Mouse.js"></script>
+    <script src="js/ClickCounterButton.js"></script>
+    <script src="js/Counter.js"></script>
+    <script src="js/ClickCounter.js"></script>
+    <script src="js/Radio.js"></script>
+    <script src="js/RadioContent.js"></script>
+    <script src="js/SliderButtons.js"></script>
+    <script src="js/SliderValue.js"></script>
+    <script src="js/SliderContent.js"></script>
   </body>
 </html>
