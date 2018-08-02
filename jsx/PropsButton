@@ -1,0 +1,7 @@
+class PropsButton extends React.Component {
+  render() {
+    return <button className="btn">{this.props.title}</button>
+  }
+}
+
+PropsButton.defaultProps = {title: 'Submit'}

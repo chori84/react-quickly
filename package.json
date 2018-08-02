@@ -40,7 +40,17 @@
     "build-uncontrolled": "./node_modules/.bin/babel jsx/UncontrolledComponent.jsx -o js/UncontrolledComponent.js -w",
     "build-refs": "./node_modules/.bin/babel jsx/Refs.jsx -o js/Refs.js -w",
     "build-uncontrolledBundle": "npm run build-uncontrolled & npm run build-refs",
-    "build": "npm run build-hello & npm run build-content & npm run build-clockBundle & npm run build-lifecycleLogger & npm run build-noteScriptNote & npm run build-saveButton & npm run build-mouse & npm run build-clickCounterBundle & npm run build-resizeRadioBundle & npm run build-sliderBundle & npm run build-input & npm run build-checkedBundle & npm run build-account & npm run build-uncontrolledBundle"
+    "build-propsButton": "./node_modules/.bin/babel jsx/PropsButton.jsx -o js/PropsButton.js -w",
+    "build-propsContent": "./node_modules/.bin/babel jsx/PropsContent.jsx -o js/PropsContent.js -w",
+    "build-propsBundle": "npm run build-propsButton & npm run build-propsContent",
+    "build-children": "./node_modules/.bin/babel jsx/ChildrenContent.jsx -o js/ChildrenContent.js -w",
+    "build-loadWebsite": "./node_modules/.bin/babel jsx/LoadWebsite.jsx -o js/LoadWebsite.js -w",
+    "build-hocButton": "./node_modules/.bin/babel jsx/HocButton.jsx -o js/HocButton.js -w",
+    "build-hocLink": "./node_modules/.bin/babel jsx/HocLink.jsx -o js/HocLink.js -w",
+    "build-hocLogo": "./node_modules/.bin/babel jsx/HocLogo.jsx -o js/HocLogo.js -w",
+    "build-hocContent": "./node_modules/.bin/babel jsx/HocContent.jsx -o js/HocContent.js -w",
+    "build-hocBundle": "npm run build-loadWebsite & npm run build-hocButton & npm run build-hocLink & npm run build-hocLogo & npm run build-hocContent",
+    "build": "npm run build-hello & npm run build-content & npm run build-clockBundle & npm run build-lifecycleLogger & npm run build-noteScriptNote & npm run build-saveButton & npm run build-mouse & npm run build-clickCounterBundle & npm run build-resizeRadioBundle & npm run build-sliderBundle & npm run build-input & npm run build-checkedBundle & npm run build-account & npm run build-uncontrolledBundle & npm run build-propsBundle & npm run build-children & npm run build-hocBundle"
   },
   "keywords": [
     "react.js"
