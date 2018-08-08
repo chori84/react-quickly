@@ -53,8 +53,11 @@
     "build-link": "./node_modules/.bin/babel jsx/Link.jsx -o js/Link.js -w",
     "build-menu": "./node_modules/.bin/babel jsx/Menu.jsx -o js/Menu.js -w",
     "build-menuBundle": "npm run build-link & npm run build-menu",
-    "build-tooltip": "./node_modules/.bin/babel jsx/Tooltip.jsx -o js/Tooltip.js -w",
-    "build": "npm run build-hello & npm run build-content & npm run build-clockBundle & npm run build-lifecycleLogger & npm run build-noteScriptNote & npm run build-saveButton & npm run build-mouse & npm run build-clickCounterBundle & npm run build-resizeRadioBundle & npm run build-sliderBundle & npm run build-input & npm run build-checkedBundle & npm run build-account & npm run build-uncontrolledBundle & npm run build-propsBundle & npm run build-children & npm run build-hocBundle & npm run build-menuBundle & npm run build-tooltip"
+    "build-timer": "./node_modules/.bin/babel jsx/Timer.jsx -o js/Timer.js -w",
+    "build-timerButton": "./node_modules/.bin/babel jsx/TimerButton.jsx -o js/TimerButton.js -w",
+    "build-timerWrapper": "./node_modules/.bin/babel jsx/TimerWrapper.jsx -o js/TimerWrapper.js -w",
+    "build-timerBundle": "npm run build-timer & npm run build-timerButton & npm run build-timerWrapper",
+    "build": "npm run build-hello & npm run build-content & npm run build-clockBundle & npm run build-lifecycleLogger & npm run build-noteScriptNote & npm run build-saveButton & npm run build-mouse & npm run build-clickCounterBundle & npm run build-resizeRadioBundle & npm run build-sliderBundle & npm run build-input & npm run build-checkedBundle & npm run build-account & npm run build-uncontrolledBundle & npm run build-propsBundle & npm run build-children & npm run build-hocBundle & npm run build-menuBundle & npm run build-tooltip & npm run build-timerBundle"
   },
   "keywords": [
     "react.js"
