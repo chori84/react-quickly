@@ -53,6 +53,7 @@
     "build-link": "./node_modules/.bin/babel jsx/Link.jsx -o js/Link.js -w",
     "build-menu": "./node_modules/.bin/babel jsx/Menu.jsx -o js/Menu.js -w",
     "build-menuBundle": "npm run build-link & npm run build-menu",
+    "build-tooltip": "./node_modules/.bin/babel jsx/Tooltip.jsx -o js/Tooltip.js -w",
     "build-timer": "./node_modules/.bin/babel jsx/Timer.jsx -o js/Timer.js -w",
     "build-timerButton": "./node_modules/.bin/babel jsx/TimerButton.jsx -o js/TimerButton.js -w",
     "build-timerWrapper": "./node_modules/.bin/babel jsx/TimerWrapper.jsx -o js/TimerWrapper.js -w",
