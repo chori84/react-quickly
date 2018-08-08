@@ -50,7 +50,10 @@
     "build-hocLogo": "./node_modules/.bin/babel jsx/HocLogo.jsx -o js/HocLogo.js -w",
     "build-hocContent": "./node_modules/.bin/babel jsx/HocContent.jsx -o js/HocContent.js -w",
     "build-hocBundle": "npm run build-loadWebsite & npm run build-hocButton & npm run build-hocLink & npm run build-hocLogo & npm run build-hocContent",
-    "build": "npm run build-hello & npm run build-content & npm run build-clockBundle & npm run build-lifecycleLogger & npm run build-noteScriptNote & npm run build-saveButton & npm run build-mouse & npm run build-clickCounterBundle & npm run build-resizeRadioBundle & npm run build-sliderBundle & npm run build-input & npm run build-checkedBundle & npm run build-account & npm run build-uncontrolledBundle & npm run build-propsBundle & npm run build-children & npm run build-hocBundle"
+    "build-link": "./node_modules/.bin/babel jsx/Link.jsx -o js/Link.js -w",
+    "build-menu": "./node_modules/.bin/babel jsx/Menu.jsx -o js/Menu.js -w",
+    "build-menuBundle": "npm run build-link & npm run build-menu",
+    "build": "npm run build-hello & npm run build-content & npm run build-clockBundle & npm run build-lifecycleLogger & npm run build-noteScriptNote & npm run build-saveButton & npm run build-mouse & npm run build-clickCounterBundle & npm run build-resizeRadioBundle & npm run build-sliderBundle & npm run build-input & npm run build-checkedBundle & npm run build-account & npm run build-uncontrolledBundle & npm run build-propsBundle & npm run build-children & npm run build-hocBundle & npm run build-menuBundle"
   },
   "keywords": [
     "react.js"
