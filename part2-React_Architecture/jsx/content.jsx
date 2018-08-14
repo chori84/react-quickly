@@ -1,5 +1,5 @@
 const React = require('react');
-const ReactDOM = require('react-dom')
+const ReactDOM = require('react-dom');
 
 class Content extends React.Component {
   constructor(props) {
@@ -20,7 +20,7 @@ class Content extends React.Component {
     return <div className="well">
       <p>{this.prompt}</p>
         <div className="form-group">
-          Email: <input ref="emailAddress" className="form-control" type="text" placeholder="hi@azat.co"/>
+          Your Email: <input ref="emailAddress" className="form-control" type="text" placeholder="hi@azat.co"/>
           <input ref={(input) => {this.emailInput = input}} className="form-control" type="text" placeholder="hi@azat.co"/>
         </div>
         <div className="form-group">
